@@ -181,7 +181,7 @@ article {
     
 }
 .footer .social a > * {
-    padding-top: 10px;
+    padding-top: 5px;
     
 }
 
@@ -198,7 +198,8 @@ article {
 
 }
 .footer .social .fas {
-    padding-top: 10px;
+    padding-top: 5px;
+    
     color: #000;
 
 }
