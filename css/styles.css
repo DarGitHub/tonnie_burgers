@@ -55,7 +55,9 @@ header {
 }
 
 .face-text {
+    font-size: 1.3rem;
     flex: 3;
+    padding: 2px;
 }
 
 nav,aside {
@@ -68,9 +70,20 @@ nav,aside {
     display: flex;
     justify-content: center;
     height: 70vh;
-    
-    flex: 1;
-   
+    flex: 1;  
+}
+
+.nav-link a {
+    background: #fff;
+    font-size: 1.3rem;
+    padding: 2px;
+    border-radius: 5%;
+}
+
+.nav-link h2 {
+    background: #fff;
+    padding: 2px;
+    border-radius: 5%;
 }
 
 ul {
@@ -109,14 +122,16 @@ article {
 
 .tonnie-burgers h1 {
     background: #28a745;
-    width: 165px;
+    width: 110px;
+    font-size: 1.8rem;
+    opacity: .8;
 }
 
 .menu {
     background: url("../images/tonnie_burgers.jpg")no-repeat center center/cover;
     display: flex;
     height: 75vh;
-    width: 800px;
+    width: 900px;
     
     color: #fff;
 }
@@ -125,6 +140,18 @@ article {
     display: flex;
     flex-direction: column;
     padding: 20px 5px;
+
+}
+
+.container article {
+    display: flex;
+    flex-direction: column;
+}
+
+.container article footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
 }
 
 /* Footer */
