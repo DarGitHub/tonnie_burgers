@@ -1,47 +1,727 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>flexbox display property</title>
-    </head>
-    <body>
-        <div class="main">
-            <header>
-                <div class="logo"><i><img src="images/burger.jpg" alt=""></i></div>
-                <div class="face">
-                    <div class="face-image"><i><img src="images/ccrafts.jpg" alt=""></i></div>
-                <div class="face-text"><a href="https://dargithub.github.io/cc_webpage/">Visit</a></div>
-                </div>
-                
-            </header>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tonnie Burgers</title>
+	<link rel="shortcut icon" href="img/images/burger2.ico">
+	<!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Animate.css https://cdnjs.com/libraries/animate.css/
+		https://daneden.github.io/animate.css/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<!-- jQuery https://code.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
 
-        <div class="container">
-            <nav class="nav-link">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <article class="tonnie-burgers"><h1>Tonnie Burgers</h1></article>
-            <aside></aside> 
-        </div>
-        <footer class="footer ">
-            <div class="social">
-              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-              <div>
-                <a href="https://dargithub.github.io/cc_webpage/"><i class="fas fa-cut"></i></a>
-                <h6>Christeen Crafts</h6>
-              </div>
-               
-             </div>
-          <p>Copyright &copy; 2021 - Tonnie Burgers</p>
-          <h6><p class="p">Created By: Darrell E. M. Smith</p></h6>
-        </div> 
-        </footer>
-        
-        
+	<!-- Start Home Section -->
+	<div id="home">
 
-    </body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+				<a href="#home" class="navbar-brand"><img src="img/images/burger.jpg" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#features" class="nav-link">Features</a>
+						</li>
+						<li class="nav-item">
+							<a href="#portfolio" class="nav-link">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a href="#pricing" class="nav-link">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a href="#team" class="nav-link">Team</a>
+						</li>
+						<li class="nav-item">
+							<a href="#skills" class="nav-link">Ratings</a>
+						</li>
+						<li class="nav-item">
+							<a href="#clients" class="nav-link">Clients</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Start Landing Page Image -->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner"></div>
+			</div>
+		</div>
+		<!-- End Landing Page Image -->
+
+		<!-- Start Landing Page Caption -->
+		<div class="caption text-center text-light text-uppercase">
+
+			<h1 class="font-weight-bold os-animation" data-animation="fadeInUp" data-delay=".6s">Welcome to <span class="text-nuno">Tonnie's</span></h1>
+			<h3 class="os-animation" data-animation="fadeInUp" data-delay=".8s">Second To None</h3>
+			<a href="#features" class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="fadeInUp" data-delay="1s">Get Your Grub On</a>
+
+		</div>
+		<!-- End Landing Page Caption -->
+
+		<!-- Start Bouncing Down Arrow -->
+		<a href="#features" class="down-arrow text-center">
+			<div class="arrow d-none d-md-block">
+				<i class="fas fa-chevron-down"></i>
+			</div>
+		</a>
+		<!-- End Bouncing Down Arrow -->
+
+	</div>
+	<!-- End Home Section -->
+
+
+	<!-- Start Features Section -->
+	<div id="features" class="offset">
+
+		<!-- Start Theme Heading -->
+		<div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp">
+			<div class="col-11 col-md-10 col-lg-9">
+				<h1>The Best Burgers You'll Find</h1>
+				<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minima itaque in atque nesciunt deleniti harum eos numquam fuga maxime.</p>
+				<a href="#contact" class="btn btn-secondary btn-sm">Call In Your Order</a>
+				<a href="#portfolio" class="btn btn-nuno btn-sm">About Tonnie's</a>
+			</div>
+		</div>
+		<!-- End Theme Heading -->
+
+		<!-- Start Jumbotron -->
+		<div class="jumbotron m-0 py-5">
+
+			<div class="col-12 os-animation" data-animation="fadeInUp">
+				<h3 class="heading">Features</h3>
+				<div class="heading-underline"></div>
+			</div>
+
+			<div class="container">
+				<div class="row text-center px-lg-4 px-xl-5">
+
+					<div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInLeft">
+						<div class="feature px-2">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
+							</span>
+							<h3>Mobile Friendly</h3>
+							<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quas?</p>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInUp">
+						<div class="feature px-2">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-desktop fa-stack-1x fa-inverse" data-fa-transform="shrink-1"></i>
+							</span>
+							<h3>Full Screen Landing</h3>
+							<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quas?</p>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInRight">
+						<div class="feature px-2">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-play fa-stack-1x fa-inverse" data-fa-transform="shrink-3.5 right-1"></i>
+							</span>
+							<h3>Custom Animation</h3>
+							<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quas?</p>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInLeft">
+						<div class="feature px-2">
+							<span class="fa-stack fa-2x">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<i class="fas fa-angle-double-down fa-stack-1x fa-inverse"></i>
+							</span>
+							<h3>Scrolling</h3>
+							<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quas?</p>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInUp">
+							<div class="feature px-2">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-sliders-h fa-stack-1x fa-inverse" data-fa-transform="shrink-1"></i>
+								</span>
+								<h3>Content</h3>
+								<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quas?</p>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInRight">
+							<div class="feature px-2">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fab fa-wpforms fa-stack-1x fa-inverse"></i>
+								</span>
+								<h3>Contact Form</h3>
+								<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quas?</p>
+							</div>
+						</div>
+
+				</div> <!-- End Row -->
+			</div> <!-- End Container-->
+
+		</div> <!-- End Jumbotron -->
+
+		<!-- Start Fixed BG IMG Dark -->
+		<div class="fixed">
+
+			<div class="row dark text-light text-center">
+			
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Made With Care</h3>
+					<div class="heading-underline"></div>
+				</div>
+
+				<div class="col-md-4 os-animation" data-animation="fadeInLeft">
+					<h3>Tonnie Burger</h3>
+					<div class="feature py-2">
+						<span><a href="Ingredients.html"><i class="fas fa-hamburger fa-3x"></i></a>
+						</span>
+					</div>
+					<p class="lead">Made with the Best Ingredients</p>
+				</div>
+
+				<div class="col-md-4 os-animation" data-animation="fadeInUp">
+					<h3>Christeen Crafts</h3>
+					<div class="feature py-2">
+						<span><a href="https://dargithub.github.io/cc_webpage/"><i class="fas fa-cut fa-3x"></i></a>
+						</span>
+					</div>
+					<p class="lead">Made with Love</p>
+				</div>
+
+				<div class="col-md-4 os-animation" data-animation="fadeInRight">
+					<h3>Other Hobbies</h3>
+					<div class="feature py-2">
+						<span><a href="read_more.html"><i class="fas fa-book-reader fa-3x"></i></a>
+						</span>
+					</div>
+					<p class="lead">Read More</p>
+				</div>
+
+			</div> <!-- End Row Dark -->
+
+			<div class="fixed-wrap">
+				<div class="fixed-dark"></div>
+			</div>
+		</div>
+		<!-- End Fixed BG IMG Dark -->
+
+	</div>
+	<!-- End of Features Section -->
+
+
+	<!-- Start Portfolio Section -->
+	<div id="portfolio" class="offset">
+
+		<div class="container-fluid px-0">
+			<div class="row justify-content-center py-5">
+
+				<div class="col-12 mt-5 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Portfolio</h3>
+					<div class="heading-underline"></div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft" data-delay=".2s">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/1.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/1.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/2.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/2.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/3.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/3.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight" data-delay=".2s">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/4.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/4.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft" data-delay=".2s">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/5.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/5.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/6.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/6.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/7.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/7.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight" data-delay=".2s">
+					<div class="portfolio-item overflow-hidden">
+						<a href="img/portfolio/8.jpg" data-lightbox="example-set" data-title="My Portfolio Image Description">
+							<img src="img/portfolio/8.jpg" alt="" class="example-image w-100">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-10 col-lg-9 col-xl-8 text-center pt-5 os-animation" data-animation="fadeInUp">
+					<p class="lead">Your photo go here ^.</p>
+					<a href="#contact" class="btn btn-secondary btn-sm">Get In Touch</a>
+				</div>
+
+			</div> <!-- End Row -->
+		</div> <!-- End Container -->
+
+	</div>
+	<!-- End of Portfolio Section -->
+
+
+	<!-- Start Pricing Section -->
+	<div id="pricing" class="offset">
+
+		<div class="jumbotron mb-0">
+			<div class="container py-2">
+
+				<div class="os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Pricing</h3>
+					<div class="heading-underline"></div>
+				</div>
+
+				<div class="row justify-content-center text-center px-lg-4 px-xl-5">
+
+					<div class="col-md-6 col-lg-4 os-animation" data-animation="fadeInLeft">
+						<div class="pricing-column">
+							<h3 class="border-bottom py-2 mx-3">BASIC MEAL</h3>
+							<p class="lead py-2">list your basic prices</p>
+							<h4 class="pb-2">3 Items</h4>
+							<h4 class="pb-2">Item Price</h4>
+							<h4>Item Tax</h4>
+							<h1 class="py-3">$15</h1>
+							<a href="#contact" class="btn btn-secondary btn-sm">Buy Now</a>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 os-animation" data-animation="fadeInUp">
+						<div class="pricing-column">
+							<div class="ribbon">Best Value</div>
+							<h3 class="border-bottom py-2 mx-3 text-nuno font-weight-bold">VALUE MEAL</h3>
+							<p class="lead py-2">list your Best value prices</p>
+							<h4 class="pb-2">5 Items</h4>
+							<h4 class="pb-2">Item Price</h4>
+							<h4>Item Tax</h4>
+							<h1 class="py-3">$25</h1>
+							<a href="#contact" class="btn btn-nuno btn-sm">Buy Now</a>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-4 os-animation" data-animation="fadeInRight">
+						<div class="pricing-column">
+							<h3 class="border-bottom py-2 mx-3">MEGA MEAL</h3>
+							<p class="lead py-2">list your mega prices</p>
+							<h4 class="pb-2">8 Items</h4>
+							<h4 class="pb-2">Item Price</h4>
+							<h4>Item Tax</h4>
+							<h1 class="py-3">$40</h1>
+							<a href="#contact" class="btn btn-secondary btn-sm">Buy Now</a>
+						</div>
+					</div>
+
+				</div> <!-- End Row -->
+
+			</div> <!-- End Container -->
+		</div> <!-- End Jumbotron-->
+
+	</div>
+	<!-- End of Pricing Section -->
+
+
+	<!-- Start Team Section -->
+	<div id="team" class="offset">
+
+		<!-- Start Fixed BG IMG Light -->
+		<div class="fixed">
+
+			<div class="row light">
+
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Meet The Team</h3>
+					<div class="heading-underline"></div>
+				</div>
+
+				<div class="container">
+					<div class="os-animation" data-animation="fadeInUp">
+						<div id="team-carousel" class="owl-carousel owl-theme">
+
+							<div class="card">
+								<img src="img/images/tonnie_burgers.jpg" alt="" class="card-img-top rounded-0">
+								<div class="card-body">
+									<h4 class="font-weight-bold">Tonnie Wright</h4>
+									<h5 class="text-nuno">CEO</h5>
+									<p class="border-top border-bottom py-3 my-3">Tonnie is an entrepreneur with almost 20 years of experience.</p>
+									<ul class="social">
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div> <!-- End Card -->
+
+							<div class="card">
+								<img src="img/images/tonnie_burgers.jpg" alt="" class="card-img-top rounded-0">
+								<div class="card-body">
+									<h4 class="font-weight-bold">Tonnie Wright</h4>
+									<h5 class="text-nuno">President</h5>
+									<p class="border-top border-bottom py-3 my-3">Tonnie has over 10 years of experience in a technology role.</p>
+									<ul class="social">
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div> <!-- End Card -->
+
+							<div class="card">
+								<img src="img/images/tonnie_burgers.jpg" alt="" class="card-img-top rounded-0">
+								<div class="card-body">
+									<h4 class="font-weight-bold">Tonnie Wright</h4>
+									<h5 class="text-nuno">Vice President</h5>
+									<p class="border-top border-bottom py-3 my-3">Tonnie went to business school and worked his way up the ladder.</p>
+									<ul class="social">
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div> <!-- End Card -->
+
+							<div class="card">
+								<img src="img/images/tonnie_burgers.jpg" alt="" class="card-img-top rounded-0">
+								<div class="card-body">
+									<h4 class="font-weight-bold">Tonnie Wright</h4>
+									<h5 class="text-nuno">CFO</h5>
+									<p class="border-top border-bottom py-3 my-3">Tonnie has an established financial operations background.</p>
+									<ul class="social">
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div> <!-- End Card -->
+
+						</div> <!-- End Team Carousel -->
+					</div> <!-- End Animation -->
+				</div><!-- End Container -->
+
+			</div> <!-- End Row -->
+
+			<div class="fixed-wrap">
+				<div class="fixed-light"></div>
+			</div>
+		</div>
+		<!-- End Fixed BG IMG Light -->
+
+	</div>
+	<!-- End Team Section -->
+
+
+	<!-- Start Skills Section -->
+	<div id="skills" class="offset">
+
+		<div class="jumbotron m-0 py-5">
+			<div class="container">
+				<div class="col-12 os-animation" data-animation="fadeInUp">
+					<h3 class="heading">Service-Rating</h3>
+					<h3 class="heading">1000 = Excellent</h3>
+					<div class="heading-underline"></div>
+				</div>
+				<div class="row justify-content-center text-center os-animation" data-animation="fadeInUp">
+					<div class="col-md-9 col-lg-12 col-xl-11">
+						<div class="row">
+							<div class="col-md-6 col-lg-3">
+								<span class="fa-stack fa-3x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-clock fa-stack-1x fa-inverse"></i>
+								</span>
+								<h1 class="text-nuno font-weight-bold py-1"><span class="counter">1000</span></h1>
+								<h4 class="text-uppercase font-weight-bold">Time Preparing Order</h4>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<span class="fa-stack fa-3x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fas fa-drumstick-bite fa-stack-1x fa-inverse" data-fa-transform="shrink-6.5 left-8"></i>
+									<!-- <i class="fas fa-square fa-stack-2x"></i> -->
+									<i class="fas fa-hotdog fa-stack-1x fa-inverse" data-fa-transform="shrink-6.5 right-8"></i>
+									<i class="fas fa-fish fa-stack-1x fa-inverse" data-fa-transform="shrink-6.5 up-8"></i>
+									<i class="fas fa-hamburger fa-stack-1x fa-inverse" data-fa-transform="shrink-6.5 down-8"></i>
+								</span>
+								<h1 class="text-nuno font-weight-bold py-1"><span class="counter">1000</span></h1>
+								<h4 class="text-uppercase font-weight-bold">Quality Of Food</h4>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<span class="fa-stack fa-3x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fas fa-users fa-stack-1x fa-inverse"></i>
+								</span>
+								<h1 class="text-nuno font-weight-bold py-1"><span class="counter">1000</span></h1>
+								<h4 class="text-uppercase font-weight-bold">Customer Service</h4>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<span class="fa-stack fa-3x">
+									<i class="fas fa-circle fa-stack-2x"></i>
+									<i class="fas fa-cloud fa-stack-1x fa-inverse"></i>
+									<i class="fas fa-wifi fa-stack-1x" data-fa-transform="shrink-7 "></i>
+								</span>
+								<h1 class="text-nuno font-weight-bold py-1"><span class="counter">1000</span></h1>
+								<h4 class="text-uppercase font-weight-bold">Web-Time Response</h4>
+							</div>
+						</div>
+						<!-- End row -->
+					</div>
+					<!-- End Column -->
+				</div>
+				<!-- End row justify content-->
+
+				<div class="col-12 text-center os-animation" data-animation="fadeInUp">
+					<p class="lead">When you want the best, you call the best.</p>
+					<a href="#contact" class="btn btn-nuno btn-sm">Contact Us</a>
+				</div>
+			</div>
+			<!-- End of container -->
+		</div>
+		<!-- End of Jumbotron -->
+
+	</div>
+	<!-- End of Skills Section -->
+
+
+	<!-- Start Clients Section -->
+	<div id="clients" class="offset">
+
+		<div class="row py-5">
+			<div class="col-12 os-animation" data-animation="fadeInUp">
+				<h3 class="heading">Our Clients</h3>
+				<div class="heading-underline"></div>
+			</div>
+			<div class="col-12 px-xl-5 os-animation" data-animation="fadeInUp">
+				<div id="clients-carousel" class="owl-carousel owl-theme">
+					<div class="row clients px-3 px-4">
+						<div class="col-lg-4 my-auto">
+							<img src="img/clients/client1.jpg" alt="">
+						</div>
+						<div class="col-lg-8">
+							<blockquote class="text-justify">
+								<i class="fas fa-quote-left"></i>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod amet ipsam omnis saepe sunt perferendis, unde dicta dolorem illum iusto? In distinctio nulla dolorum, voluptates eaque nam corrupti harum libero.
+								<hr class="clients-hr">
+								<cite>&#8212; Eric, Small Business Owner</cite>
+							</blockquote>
+						</div>
+					</div>
+					<div class="row clients px-3 px-4">
+						<div class="col-lg-4 my-auto">
+							<img src="img/clients/client2.jpg" alt="">
+						</div>
+						<div class="col-lg-8">
+							<blockquote class="text-justify">
+								<i class="fas fa-quote-left"></i>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod amet ipsam omnis saepe sunt perferendis, unde dicta dolorem illum iusto? In distinctio nulla dolorum, voluptates eaque nam corrupti harum libero.
+								<hr class="clients-hr">
+								<cite>&#8212; Rachel, Professional Photographer</cite>
+							</blockquote>
+						</div>
+					</div>
+					<div class="row clients px-3 px-4">
+						<div class="col-lg-4 my-auto">
+							<img src="img/clients/client3.jpg" alt="">
+						</div>
+						<div class="col-lg-8">
+							<blockquote class="text-justify">
+								<i class="fas fa-quote-left"></i>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod amet ipsam omnis saepe sunt perferendis, unde dicta dolorem illum iusto? In distinctio nulla dolorum, voluptates eaque nam corrupti harum libero.
+								<hr class="clients-hr">
+								<cite>&#8212; Ricky, Aspiring Developer</cite>
+							</blockquote>
+						</div>
+					</div>
+					
+				</div>
+				<!-- End of carousel -->
+			</div>
+			<!-- End column -->
+		</div>
+		<!-- End of row -->
+	</div>
+	<!-- End of Clients Section -->
+
+
+	<!-- Start Contact Section -->
+	<div id="contact" class="offset">
+		
+		<div class="container-fluid footer px-0">
+			<div class="row outer">
+
+				<div class="container">
+					<div class="row py-3">
+
+						<div class="col-md-5 px-0 pr-md-3">
+							<img src="img/images/burger2.ico" alt="">
+							<p>At our core is a collection of design and development solutions that represent everything your business needs to compete in the modern marketplace.</p>
+							<strong>Our Location</strong>
+							<p>100 Street Name<br>Our City, AA 10000</p>
+							<strong>Contact Info</strong>
+							<p>(888) 888-8888<br>tonnie@email.com</p>
+							<ul class="social pt-3">
+								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+								<li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+								<li><a href=""><i class="fab fa-instagram"></i></a></li>
+								<li><a href=""><i class="fab fa-youtube-square"></i></a></li>
+								<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+							</ul>
+						</div> <!-- End Column -->
+
+						<div class="col-md-7 px-0 pl-md-3">
+							<h3>Contact Us</h3>
+
+							<form action="contact/contact.php" method="POST" id="contact-form">
+
+								<div class="messages"></div>
+								<div class="controls">
+
+									<div class="form-group">
+										<input type="text" id="form_name" class="form-control" name="name" required="required" placeholder="Enter your name.">
+									</div>
+
+									<div class="form-group">
+										<input type="email" id="form_email" class="form-control" name="email" required="required" placeholder="Enter your email.">
+									</div>
+
+									<div class="form-group">
+										<textarea name="message" id="form_message" rows="4" class="form-control" required="required" placeholder="Add your message."></textarea>
+									</div>
+
+									<input type="submit" class="btn btn-outline-light btn-sm" value="Send Message">
+
+								</div> <!-- End Controls -->
+							
+							</form> <!-- End Form -->
+
+						</div> <!-- End Column -->
+
+					</div> <!-- End Row -->
+				</div> <!-- End Container -->
+
+				<hr class="socket">
+				<h5>&copy; 2021 Tonnie Burger.</h5>
+				
+
+			</div> <!-- End Row Outer -->
+		</div> <!-- End Container Fluid -->
+		
+	</div>
+	<!-- End Contact Section -->
+	
+
+	<!-- Top Scroll -->
+	<div class="top-scroll">
+		<a href="#home">
+			<i class="fa fa-angle-up"></i>
+		</a>
+		<h6>Scroll to Top</h6>
+	</div>
+	<!-- End of Top Scroll -->
+
+	<div class="created">
+		<h6>Created By: Darrell E. Smith</h6>
+	</div>
+
+	<!-- Script Source Files -->
+
+	<!-- Plugins.js -->
+	<script src="js/plugins.js"></script>
+	<!-- Waypoints https://cdnjs.com/libraries/waypoints
+		https://github.com/imakewebthings/waypoints -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
+	<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
+		https://github.com/bfintal/Counter-Up2 -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+	<!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	
+	<!-- End of Script Source Files -->
+
+</body>
 </html>
