@@ -465,6 +465,24 @@ blockquote .svg-inline--fa {
 .form-group {
    margin-bottom: 1.3rem;
 }
+.form-group, input{
+   display: block;
+   padding-right: 2rem;
+}
+.form-group #text-area{
+   display: block;
+   padding-right: 2rem;
+}
+
+.callback-form .submit {
+   display: inline-flex;
+   
+}
+.callback-form .reset {
+   padding-left: 2rem;
+   
+}
+
 
 
 
